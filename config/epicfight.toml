@@ -1,0 +1,22 @@
+
+[default_gamerule]
+	doVanillaAttack = true
+	globalStun = true
+	keepSkills = true
+	hasFallAnimation = true
+	disapleEntityUI = false
+	stiffComboAttacks = true
+	noMobsInBossfight = true
+	epicDrop = true
+	#Range: 0 ~ 100
+	weightPenalty = 100
+	canSwitchCombat = true
+	#Allowed Values: MINING, BATTLE
+	initialPlayerMode = "MINING"
+
+[loot]
+	#Range: -100 ~ 100
+	skill_book_mob_drop_chance_modifier = 0
+	#Range: -100 ~ 100
+	skill_book_chest_drop_chance_modifier = 0
+

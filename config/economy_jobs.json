@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "name": "farmer",
+      "salary": 50
+    },
+    {
+      "name": "miner",
+      "salary": 75
+    },
+    {
+      "name": "hunter",
+      "salary": 60
+    }
+  ]
+}

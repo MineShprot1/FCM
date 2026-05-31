@@ -1,0 +1,16 @@
+type = custom_gui_screens
+
+overridden_screens {
+}
+
+custom_gui {
+  identifier = intro
+  title = 
+  allow_esc = false
+  transparent_world_background = false
+  transparent_world_background_overlay = true
+  pause_game = false
+  popup_mode = false
+  popup_mode_background_overlay = true
+}
+

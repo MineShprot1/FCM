@@ -1,0 +1,247 @@
+/*
+==============================================
+|        ADM Anticheat - Configuration       |
+|        Author: Admany                      |
+|        All Rights Reserved                 |
+==============================================
+|  This config file auto-updates itself if   |
+|  there are config changes. You do NOT need |
+|  to delete it for new features or updates! |
+==============================================
+*/
+
+{
+  "_comment": "Edit this file to configure the anticheat. For documentation, visit: https://github.com/admany",
+
+  // === General Settings ===
+  // Server name shown in Discord webhooks
+  "serverName": "ADM Minecraft Server",
+  // Turn the whole anticheat system on/off
+  "anticheatEnabled": true,
+  // Show anticheat messages in server console
+  "logToConsole": true,
+  // Link where players can appeal bans
+  "appealLink": "",
+
+  // === Kick/Ban Messages ===
+  // Default kick message for mod/resource pack mismatch
+  "kickReason": "Your mods or resource packs do not match the server requirements. (ADM Anticheat)",
+  // Kick message for mod/resource pack mismatch
+  "modMismatchKickMessage": "Your mods or resource packs do not match the server requirements.",
+
+  // === ID Validation (Mods & Resource Packs) ===
+  // Check if client mods/resourcepacks match server. Turn off to skip this check except for blacklisted items.
+  "enableIdValidation": true,
+  // Check mod IDs only (default: true)
+  "enableModIdValidation": true,
+  // Check resourcepack IDs only (default: false)
+  "enableResourcePackIdValidation": true,
+  // Mod IDs to always ignore. Don't add comma after last item!
+  "ignoredModIds": [],
+  // Resource pack IDs to always ignore. Don't add comma after last item!
+  "ignoredPackIds": [],
+  // Player UUIDs to skip ID checks for. Don't add comma after last item!
+  "ignoredPlayerUuids": [],
+  // Player names to skip ID checks for. Don't add comma after last item!
+  "ignoredPlayerNames": [],
+  // Auto-ignore mods with 'api' in the name
+  "ignoreApiMods": true,
+  // Auto-ignore mods with 'lib' in the name
+  "ignoreLibraryMods": true,
+  // Auto-ignore mods with 'mixin' in the name
+  "ignoreMixinMods": true,
+  // Auto-ignore mods with 'core' in the name
+  "ignoreCoreMods": true,
+  // Skip checking common safe mods like FerriteCore, Spark, etc. Set to false to check everything strictly.
+  "skipHardcodedIgnoredMods": true,
+  // Mods that are always blocked, even if ID validation is off
+  "modBlacklist": [],
+  // Resource packs that are always blocked, even if ID validation is off
+  "resourcePackBlacklist": [],
+
+  // === Packet Integrity ===
+  // Check for modified/invalid packets from clients
+  "enablePacketIntegrityCheck": true,
+  // Kick message for bad packets
+  "packetKickReason": "Kicked for sending modified/invalid packets.",
+  // Ban message for repeated bad packets
+  "packetBanReason": "Banned for repeated modified/invalid packets.",
+  // How many bad packets before kicking
+  "packetKickThreshold": 3,
+  // How long to ban for bad packets (0 = forever)
+  "packetBanTimeSeconds": 3600,
+  // Kick players for bad packets
+  "kickForInvalidPackets": true,
+  // Ban players for repeated bad packets
+  "banForInvalidPackets": true,
+  // Use advanced packet checking (recommended)
+  "enableAdvancedPacketValidation": true,
+  // Check if packets arrive in the right order
+  "validatePacketSequencing": true,
+  // Max packets per second before flagging (default: 50)
+  "maxPacketRatePerSecond": 50,
+  // Max packet size in bytes (default: 32KB)
+  "maxPacketSizeBytes": 32767,
+  // How old packets can be before flagging (default: 5 seconds)
+  "packetTimestampToleranceMs": 5000,
+
+  // === Fly Anticheat ===
+  // Enable fly anticheat module (experimental)
+  "enableFlyAnticheat": false,
+  // Enable banning for fly hacks
+  "enableFlyBan": true,
+  // Ban time in seconds for fly hacks (0 = permanent)
+  "flyBanTimeSeconds": 3600,
+  // Number of suspicious fly events before kick
+  "flyKickThreshold": 5,
+  // Number of suspicious fly events before ban
+  "flyBanThreshold": 10,
+  // Message for fly hack webhook
+  "flyWebhookMessage": "{player} suspected of fly hacking. ({count} events)",
+  // Message for fly connection warning
+  "flyConnectionWarningMessage": "{player} has high ping or connection issues during fly check.",
+  // Ban reason for fly hacks
+  "flyBanReason": "Banned for fly hacking.",
+  // Minimum Y-diff for fly detection
+  "flyMinYDiff": 0.5,
+  // Grace period after join/teleport (seconds)
+  "flyGracePeriodSeconds": 5,
+  // Maximum allowed movement speed for fly detection
+  "maxAllowedSpeed": 10.0,
+  // Threshold for vertical speed to trigger fly detection
+  "flyVerticalSpeedThreshold": 0.42,
+  // Number of events before warning for fly
+  "flyWarnThreshold": 3,
+  // Ban duration in seconds for fly hack (default: 1 hour)
+  "flyBanDurationSeconds": 3600,
+
+  // === High Ping Detection ===
+  // Enable high ping message to player
+  "enableHighPingMessage": true,
+  // Ping threshold (ms) for high ping message
+  "highPingThreshold": 350,
+  // Number of consecutive high pings before kick
+  "highPingMaxStrikes": 5,
+  // Message sent to player on high ping
+  "highPingMessage": "<green>You have high ping: <ping></yellow> ms",
+  // Hex color for the main message (default: green)
+  "highPingColor": "#00FF00",
+  // Hex color for the ping value (default: yellow)
+  "highPingPingColor": "#FFFF00",
+
+  // === ESP/Xray Anticheat (DISABLED) ===
+  // [FORCEFULLY DISABLED] This option is always false. ESP anticheat is experimental and does not work yet how it should.
+  "enableEspAnticheat": false,
+  // [FORCEFULLY DISABLED] This option is always false. Xray anticheat is experimental and does not work yet at all.
+  "enableXrayAnticheat": false,
+  // Number of consistent detections needed for ESP
+  "espRequiredConsistentDetections": 4,
+  // Minimum distance to trigger ESP suspicion
+  "espMinSuspiciousDistance": 12.0,
+
+  // === Auto-Clicker Detection ===
+  // Detect auto-clickers. Players clicking too fast get flagged and kicked.
+  "enableAutoClickerDetection": false,
+  // Max clicks per second before flagging (default: 15.0)
+  "autoClickerMaxCps": 15.0,
+  // How many violations before kicking (default: 3)
+  "autoClickerViolationLimit": 3,
+  // Kick message for auto-clicker detection
+  "autoClickerKickReason": "Kicked for suspected auto-clicker usage.",
+  // Use pattern analysis for better detection (recommended)
+  "enableAdvancedAutoClickerDetection": true,
+  // How consistent clicks need to be to flag as robotic (0.0-1.0, default: 0.85)
+  "autoClickerPatternThreshold": 0.85,
+  // Min clicks needed to analyze patterns (default: 10)
+  "autoClickerMinClicksForPattern": 10,
+  // Multiplier for detecting click bursts (default: 2.5x normal)
+  "autoClickerBurstMultiplier": 2.5,
+  // Time window for pattern analysis in seconds (default: 5)
+  "autoClickerAnalysisWindowSeconds": 5,
+
+  // === AFK Detection ===
+  // Enable automatic AFK kicks. If true, players who are idle longer than afkKickThresholdSeconds will be kicked.
+  "enableAfkKick": false,
+  // Seconds of inactivity before a player is considered AFK and kicked (default 900 = 15 minutes)
+  "afkKickThresholdSeconds": 900,
+  // Message shown to player when they are kicked for AFK
+  "afkKickReason": "Kicked for being AFK.",
+  // Grace period after join/teleport during which AFK checks are ignored (seconds)
+  "afkGraceSeconds": 30,
+  // Minimum distance (in blocks) to consider as movement. Use a small value like 0.05 to reduce jitter.
+  "afkMinMoveDistance": 0.1,
+
+  // === Gamma Checker ===
+  // Enable gamma (brightness) checker. If true, players with gamma above maxAllowedGamma will be flagged and kicked after repeated violations.
+  "enableGammaChecker": false,
+  // Maximum allowed gamma (brightness) value before a player is flagged (default: 0.8 = 80% brightness)
+  "maxAllowedGamma": 0.8,
+  // Number of gamma violations before a player is kicked (default: 3)
+  "gammaViolationLimit": 3,
+  // Message shown to player when kicked for high gamma
+  "gammaKickReason": "Kicked for excessive brightness settings.",
+  // Message for gamma violation webhook
+  "gammaWebhookMessage": "{player} flagged for high gamma setting: {gamma} (max: {max})",
+
+  // === Reach Detection ===
+  // Detect reach hacks in combat. Players hitting too far get flagged and kicked.
+  "enableReachDetection": false,
+  // Max reach distance in blocks before flagging (default: 3.0)
+  "maxReachDistance": 3.0,
+  // How many reach violations before kicking (default: 3)
+  "reachViolationLimit": 3,
+  // Kick message for reach violations
+  "reachKickReason": "Kicked for suspected reach hacking.",
+  // Message for reach violation webhook
+  "reachWebhookMessage": "{player} flagged for reach violation: {distance} blocks (max: {max})",
+  // Check reach in creative mode (default: false)
+  "reachCheckCreativeMode": false,
+
+  // === Inventory Manipulation Detection ===
+  // Enable inventory manipulation detection. If true, suspicious inventory operations will be flagged and players kicked after repeated violations.
+  "enableInventoryManipulationDetection": false,
+  // Maximum number of invalid item stacks allowed before flagging (default: 5)
+  "maxInvalidItemStacks": 5,
+  // Number of inventory violations before a player is kicked (default: 3)
+  "inventoryViolationLimit": 3,
+  // Message shown to player when kicked for inventory violations
+  "inventoryKickReason": "Kicked for suspected inventory manipulation.",
+  // Message for inventory violation webhook
+  "inventoryWebhookMessage": "{player} flagged for inventory manipulation: {type} ({count} violations)",
+  // Whether to validate item stack properties (default: true)
+  "checkItemStackValidity": true,
+  // Whether to monitor rapid inventory changes (default: true)
+  "checkInventoryChanges": true,
+  // Maximum inventory slot changes per second before flagging (default: 20)
+  "maxInventoryChangesPerSecond": 20,
+
+  // === Hot Config Reloading ===
+  // How often to check for config file changes in seconds (default: 5)
+  "configReloadIntervalSeconds": 5,
+
+  // === Admin Settings ===
+  // List of player names allowed to use /adm commands in-game. WARNING: Do not add a comma after the last item in the list!
+  "admCommandUsers": [],
+
+  // === Debug Settings ===
+  // Enable detailed debug logging for ID validation
+  "debug": false,
+  // Show full IDs instead of truncated versions
+  "debugShowFullIds": false,
+  // Show timing information for validation steps
+  "debugShowTimings": false,
+  // Show mods that were ignored due to filters
+  "debugShowIgnored": false,
+  // Use colored console output for debug messages
+  "debugColoredOutput": true,
+  // Save debug output to a log file
+  "debugSaveToFile": false,
+  // Debug log file path
+  "debugLogFile": "config/admanticheat_debug.log",
+
+  // === Experimental Features ===
+  // HIGHLY Experimental! If true, the server will check if the client's code matches the server's code on join. If not, the client is instantly kicked and a webhook is sent. Default: false. Use at your own risk!
+  "enableExperimentalClientCodeValidation": false,
+
+  "_experimental": "Fly, ESP, and Xray detection are experimental and may not be 100% reliable. Use with caution!"
+}

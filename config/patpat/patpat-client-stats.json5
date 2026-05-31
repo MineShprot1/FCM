@@ -1,0 +1,19 @@
+{
+  "totalPatsCounter": {
+    "pats": 270
+  },
+  "entities": {
+    "minecraft:armor_stand": {
+      "pats": 22
+    },
+    "alexsmobs:seal": {
+      "pats": 182
+    },
+    "items_displayed:item_display": {
+      "pats": 18
+    },
+    "minecraft:iron_golem": {
+      "pats": 44
+    }
+  }
+}

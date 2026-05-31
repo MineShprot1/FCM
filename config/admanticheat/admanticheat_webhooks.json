@@ -1,0 +1,44 @@
+/*
+==============================================
+|     ADM Anticheat - Webhook Configuration  |
+|        Author: Admany                      |
+|        All Rights Reserved                 |
+==============================================
+|  This config file auto-updates itself if   |
+|  there are config changes. You do NOT need |
+|  to delete it for new features or updates! |
+==============================================
+*/
+
+{
+  // Configuration version for migration handling
+  "configVersion": 1,
+
+  // === General Webhook Settings ===
+  // Enable Discord webhook notifications
+  "webhookEnabled": true,
+  // Main Discord webhook URL (leave blank to disable)
+  "webhookUrl": "",
+
+  // === Event-Specific Webhook URLs ===
+  // Discord webhook URL for player join announcements (uses main URL if empty)
+  "playerJoinWebhookUrl": "",
+  // Discord webhook URL for player leave announcements (uses main URL if empty)
+  "playerLeaveWebhookUrl": "",
+  // Webhook URL for fly warnings (uses main URL if empty)
+  "flyWarnWebhookUrl": "",
+  // Webhook URL for fly kicks (uses main URL if empty)
+  "flyKickWebhookUrl": "",
+  // Webhook URL for fly ban events (uses main URL if empty)
+  "flyBanWebhookUrl": "",
+
+  // === Notification Settings ===
+  // Enable Discord webhook notifications when Sinytra/Connector is detected
+  "enableSinytraNotifications": true,
+  // Enable Discord webhook notifications for blacklist kicks
+  "enableBlacklistNotifications": true,
+  // Cooldown window (seconds) to dedupe repeated Sinytra notifications per player
+  "sinytraNotifyCooldownSeconds": 900,
+  // Send embed to main webhook URL when player is kicked for AFK
+  "afkAdminEmbedEnabled": false
+}

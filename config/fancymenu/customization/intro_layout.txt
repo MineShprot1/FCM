@@ -1,0 +1,101 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = intro
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1776616250282
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:14b76f20-b9c0-4ed2-a3dd-be35845a484b-1776616063983] = [groups:][instances:]
+}
+
+menu_background {
+  source = [source:local]config/fancymenu/assets/fcm1.mp4
+  loop = false
+  volume = 1.0
+  sound_source = master
+  parallax = false
+  parallax_intensity = 0.02
+  invert_parallax = false
+  instance_identifier = 6b3d2b18-d6f7-4c1b-b73a-88c77a84a886-1776616069326
+  background_type = video_mcef
+}
+
+customization {
+  action = setopenaudio
+  path = [source:local]/config/fancymenu/assets/fcmsound.ogg
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
+}
+
+element {
+  is_async = false
+  tick_delay = 0
+  tick_mode = normal
+  ticker_element_executable_block_identifier = 7d73c52f-ce90-41b7-94b5-79009c78d281-1776616140084
+  [executable_action_instance:9907ed43-cf8f-4139-a7f9-3ba8153f3b72-1776616231332][action_type:closegui] = 
+  [executable_block:7bc6066b-b3f1-49ca-a006-9d642d9f13d0-1776616225673][type:if] = [executables:9907ed43-cf8f-4139-a7f9-3ba8153f3b72-1776616231332;]
+  [if_executable_block_body:7bc6066b-b3f1-49ca-a006-9d642d9f13d0-1776616225673] = 99ecc0ba-ebec-494f-b3eb-4b22c7e06d15-1776616186763
+  [loading_requirement_container_meta:99ecc0ba-ebec-494f-b3eb-4b22c7e06d15-1776616186763] = [groups:][instances:9186366a-5379-472a-ba69-6d9bcfcded32-1776616188125;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:9186366a-5379-472a-ba69-6d9bcfcded32-1776616188125] = ["mode":"equals","text":"{"placeholder":"video_background_playtime","values":{"background_identifier":"6b3d2b18-d6f7-4c1b-b73a-88c77a84a886-1776616069326","show_percentage":"false"}}","compare_with":"{"placeholder":"video_background_duration","values":{"background_identifier":"6b3d2b18-d6f7-4c1b-b73a-88c77a84a886-1776616069326"}}"]$
+  [if_executable_block_collapsed:7bc6066b-b3f1-49ca-a006-9d642d9f13d0-1776616225673] = false
+  [executable_block:7d73c52f-ce90-41b7-94b5-79009c78d281-1776616140084][type:generic] = [executables:7bc6066b-b3f1-49ca-a006-9d642d9f13d0-1776616225673;]
+  element_type = fancymenu_customization_item_ticker
+  instance_identifier = 2b94909f-a841-4289-8547-046d2b1e7b68-1776616140084
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2562
+  auto_sizing_base_screen_height = 1602
+  sticky_anchor = false
+  anchor_point = bottom-right
+  x = -34
+  y = -46
+  width = 31
+  height = 9
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = d14fa439-f40d-472d-a6a1-f752499826cc-1776616140084
+  [loading_requirement_container_meta:d14fa439-f40d-472d-a6a1-f752499826cc-1776616140084] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+}
+

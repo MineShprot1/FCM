@@ -1,0 +1,13 @@
+
+[interval]
+	#How many ticks between each payday
+	"PayDay Ticks" = 24000.0
+
+[interest]
+	Interest = true
+	#The interest percentage that the player will get on a payday
+	"Interest Percentage" = 2.0
+	#The minimum required balance for interest
+	"Interest Minimum Balance" = 500.0
+	"Interest Maximum" = 500000.0
+

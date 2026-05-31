@@ -1,0 +1,50 @@
+
+#Mystic's Biomes
+#Common Config Center
+#v.3.5 - 12.26.2025
+["Biome Gen"]
+	#The higher the number, the more common the biomes will be.
+	#Default: 6
+	"Biome Region Weight" = 6
+	#Uses the method Biomes O' Plenty uses for generating biomes.
+	#Not personally recommended but feel free to try it out.
+	"Enable Experimental Biome Gen" = false
+
+["Biome Toggles"]
+	#Determine if a biome will generate or not.
+	"Enable Strawberry Fields" = true
+	"Enable Lavender Meadow" = true
+	"Enable Bamboo Blossom Forest" = true
+	"Enable Autumnal Grove" = true
+	"Enable Lush Oasis" = true
+	"Enable Lagoon" = true
+	"Enable Tropics" = true
+
+["Biome Spawns"]
+	#List of the biomes each biome can replace.
+	#Whatever biomes are listed, the given biome will have a chance to spawn in place of that biome.
+	#Default: minecraft:sunflower_plains
+	"Strawberry Fields Spawns" = ["minecraft:sunflower_plains"]
+	#Default: minecraft:meadow
+	"Lavender Meadow Spawns" = ["minecraft:meadow"]
+	#Default: minecraft:snowy_taiga
+	"Bamboo Blossom Forest Spawns" = ["minecraft:snowy_taiga"]
+	#Default: minecraft:taiga
+	"Autumnal Grove Spawns" = ["minecraft:taiga"]
+	#Default: minecraft:desert
+	"Lush Oasis Spawns" = ["minecraft:desert"]
+	#Default: minecraft:beach
+	"Lagoon Spawns" = ["minecraft:beach"]
+	#Default: minecraft:jungle
+	"Tropics Spawns" = ["minecraft:jungle"]
+
+["Animal Spawns"]
+	#Biomes an animal can spawn in.
+	#Values can include modded biomes and biome tags. (i.e. "mysticsbiomes:strawberry_fields")
+	"Rainbow Chickens" = ["minecraft:plains", "minecraft:forest", "minecraft:flower_forest"]
+
+["Animal Spawn Chances"]
+	#The chance an animal will spawn.
+	#The higher the number, the more common the animal will spawn.
+	"Rainbow Chicken" = 22
+

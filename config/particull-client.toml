@@ -1,0 +1,12 @@
+
+#PartiCull Client Configuration
+[General]
+	#Enables or disables the PartiCull mod functionality globally.
+	modEnabled = true
+	#Target FPS. If current FPS drops below this, particle reduction activates. Defaults to your monitor's refresh rate (fallback 60 FPS) on first launch if not manually set.
+	#Range: 0 ~ 360
+	targetFps = 165
+	#Defines how quickly particle reduction occurs. 0-5 for stepped reduction (ALL -> DECREASED -> MINIMAL). 6-10 for direct reduction (ALL -> MINIMAL).
+	#Range: 0 ~ 10
+	reductionSpeed = 3
+
