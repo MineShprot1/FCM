@@ -220,17 +220,6 @@
         "value": 10
       }
     },
-    "elixirum:generic.venenum_mastery": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "protection_pixel:fogperspective": {
       "enabled": false,
       "min": {
@@ -240,6 +229,17 @@
       "max": {
         "default": 30,
         "value": 30
+      }
+    },
+    "elixirum:generic.venenum_mastery": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "protection_pixel:drone": {
@@ -330,17 +330,6 @@
         "value": 100
       }
     },
-    "elixirum:generic.crescere_mastery": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "irons_spellbooks:cast_time_reduction": {
       "enabled": false,
       "min": {
@@ -350,6 +339,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "elixirum:generic.crescere_mastery": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "spell_power:frost": {
@@ -363,17 +363,6 @@
         "value": 2048
       }
     },
-    "elixirum:generic.medela_resistance": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "protection_pixel:neutrality": {
       "enabled": false,
       "min": {
@@ -383,6 +372,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "elixirum:generic.medela_resistance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "protection_pixel:breathinswimming": {
@@ -440,17 +440,6 @@
         "value": 1000000
       }
     },
-    "elixirum:generic.potion_mastery": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "protection_pixel:rocketassist": {
       "enabled": false,
       "min": {
@@ -460,6 +449,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "elixirum:generic.potion_mastery": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "malum:scythe_proficiency": {
@@ -1287,17 +1287,6 @@
         "value": 100
       }
     },
-    "malum:soul_ward_integrity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "irons_spellbooks:fire_magic_resist": {
       "enabled": false,
       "min": {
@@ -1318,6 +1307,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "malum:soul_ward_integrity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "reach-entity-attributes:attack_range": {
